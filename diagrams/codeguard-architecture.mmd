@@ -1,0 +1,13 @@
+flowchart LR
+    A[Codebase] --> B[Supervisor]
+    B --> C[Scan Agent]
+    B --> D[Refactor Agent]
+    B --> E[Test Agent]
+    B --> F[Compliance Agent]
+
+    C --> B
+    D --> B
+    E --> B
+    F --> B
+
+    B --> G[Reports / PR / Logs]
